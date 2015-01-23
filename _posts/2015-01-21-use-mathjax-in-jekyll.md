@@ -7,7 +7,7 @@ description: 如何在Jekyll中添加MathJax支持以显示数学公式
 math: true
 ---
 
-MathJax是一个基于Ajax技术的数学表达式显示解决方案（开源）。它能够在HTMl页面中高质量的显示LaTeX和MathML数学符号。支持大部分浏览器，不需要插件，额外字体或安装特殊的阅读器。支持复制/粘贴。
+[MathJax](www.mathjax.org)是一个基于Ajax技术的数学表达式显示解决方案（开源）。它能够在HTMl页面中高质量的显示LaTeX和MathML数学符号。支持大部分浏览器，不需要插件，额外字体或安装特殊的阅读器。支持复制/粘贴。
 
 如何利用MathJax在网页中插入公式呢？其实方法很简单， 修改html头部，添加如下语句：
 
@@ -37,3 +37,7 @@ When `a != 0`, there are two solutions to `ax^2 + bx + c = 0` and they are
 <p style="text-align:center"> 
 `x = (-b +- sqrt(b^2-4ac))/(2a) .` </p>
 </p>
+
+附上一个在线的MathJax编辑器，可实时预览公式的渲染结果：
+
+[MathJax编辑器](http://lilydjwg.devio.us/misc/mathjax.html#)
