@@ -9,8 +9,8 @@ blog:
     description: Learn. Live. Love. Dev.                                         # 博客描述
     title:                                               # 网页标题
     url: http://wenxuan.info                                                 # 博客地址
-    duoshuo:                                             # 多说ID
-    tongji:                                              # 百度统计ID
+    duoshuo: wfxr
+    tongji: wfxr
     qiniu:                                               # 七牛云地址
 author:
     name: Wenxuan                                                # 作者名称
@@ -19,6 +19,5 @@ author:
     github: http://github.com/wfxr                                              # GitHub地址
     logo: /res/img/bird.png                                               # logo地址
     douban:
-        name: wenxuandb                                            # 豆瓣地址名称
-        key: 0aebd2c43deed92520c3784cb9cc8b6f                                             # 豆瓣API Key
-        #key: 05236daf832df7500f6a490e8989e5f0                                             # 豆瓣API Key
+        name: wenxuandb
+        key: 0aebd2c43deed92520c3784cb9cc8b6f
