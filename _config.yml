@@ -19,5 +19,6 @@ author:
     github: http://github.com/wfxr                                              # GitHub地址
     logo: /res/img/bird.png                                               # logo地址
     douban:
-        name: wenxuan                                            # 豆瓣地址名称
+        name: wenxuandb                                            # 豆瓣地址名称
         key: 0aebd2c43deed92520c3784cb9cc8b6f                                             # 豆瓣API Key
+        #key: 05236daf832df7500f6a490e8989e5f0                                             # 豆瓣API Key
