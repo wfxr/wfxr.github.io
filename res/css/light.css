@@ -153,10 +153,10 @@ a:link {
 	font-family:"Droid Serif", "Time New Roman";
     color:lightgrey;
 	/*font-style:italic;*/
-    text-shadow:0px 0px 2px;
+    /*text-shadow:0px 0px 2px;*/
 	margin-top:-5%;
 	margin-bottom:0;
-	letter-spacing:4px;
+	/*letter-spacing:4px;*/
 }
 #nav {
 	margin:8% 0 8% -10%;
