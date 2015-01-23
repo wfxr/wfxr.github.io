@@ -11,7 +11,7 @@ blog:
     url: http://wenxuan.info                                                 # 博客地址
     duoshuo: wfxr
     tongji: 7f0f2b0c17ce12f9c56d5cb26bf35a23
-    qiniu:                                               # 七牛云地址
+    qiniu: wenxuan
 author:
     name: Wenxuan                                                # 作者名称
     email: wenxuangm@gmail.com                                              # 邮箱地址
