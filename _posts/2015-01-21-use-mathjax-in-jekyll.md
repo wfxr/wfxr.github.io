@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 在Jekyll中使用MathJax显示数学公式
-category: 技术
-tags: markdown tools
+category: 工具
+tags: Jekyll MathJax
 description: 如何在Jekyll中添加MathJax支持以显示数学公式
 math: true
 ---

@@ -17,7 +17,7 @@ author:
     email: wenxuangm@gmail.com                                              # 邮箱地址
     weibo:                                               # 微博地址
     github: http://github.com/wfxr                                              # GitHub地址
-    logo: /res/img/bird.png                                               # logo地址
+    logo: /res/img/bird_128x128.png                                               # logo地址
     douban:
         name: wenxuandb
         key: 0aebd2c43deed92520c3784cb9cc8b6f
