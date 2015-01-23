@@ -19,7 +19,7 @@ Jekyll中可以将此代码段添加到header.html或default.html中。
 
 ## 测试效果
 
-### 质能方程： $$E = mc^2$$
+### 方程： $$E = mc^2$$
 
 ### 矩阵：
 

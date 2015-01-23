@@ -16,7 +16,7 @@ author:
     name: Wenxuan                                                # 作者名称
     email: wenxuangm@gmail.com                                              # 邮箱地址
     weibo:                                               # 微博地址
-    github: wfxr                                              # GitHub地址
+    github: http://github.com/wfxr                                              # GitHub地址
     logo: /res/img/bird.png                                               # logo地址
     douban:
         name:                                            # 豆瓣地址名称

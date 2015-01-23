@@ -85,7 +85,7 @@ private void DoForeach()
 |`linq` (*ms*)    |17  |34  |70  |144 |284 |577 |1145|
 |**相对效率增幅** |-18%|-15%|11% |27% |-11%|9%  |-14%|
 
-![Geometric pattern with fading gradient](/img/linq_test_result_int.jpg)
+![Geometric pattern with fading gradient](/res/img/linq_test_result_int.jpg)
 
 **列表元素为`string`时**
 
@@ -95,7 +95,7 @@ private void DoForeach()
 |`linq` (*ms*)    |17  |33  |70  |138 |296 |568 |1157|
 |**相对效率增幅** |-18%|-15%|-20%|-13%|-11%|-11%|-17%|
 
-![Geometric pattern with fading gradient](/img/linq_test_result_string.jpg)
+![Geometric pattern with fading gradient](/res/img/linq_test_result_string.jpg)
 
 <p>
 （相对效率增幅通过`E_(21)=(e_1 - e_2) / e_1 = (1 / t_1 - 1 / t_2) / (1 / t_1) = (t_2 - t_1) / t_2`计算。）
