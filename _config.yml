@@ -6,7 +6,7 @@ paginate_path: page/:num
 
 blog:
     name: Wenxuan's Blog                                                # 博客名称
-    description:                                         # 博客描述
+    description: Learn. Live. Love. Dev.                                         # 博客描述
     title:                                               # 网页标题
     url: http://wenxuan.info                                                 # 博客地址
     duoshuo:                                             # 多说ID

@@ -1,6 +1,10 @@
 @font-face {
 	font-family:segoepr;
-	src:url("/res/fonts/segoepr.ttf"),url("/res/fonts/segoepr.eot"),url("/res/fonts/segoepr.otf"),url("/res/fonts/segoepr.svg"),url("/res/fonts/segoepr.woff");
+	src:url("/res/fonts/segoepr.ttf"),url("/res/fonts/segoepr.eot"),url("/res/fonts/segoepr.otf"),url("/res/fonts/segoepr.svg"),url("/res/fonts/segoepr.woff"),
+}
+@font-face{
+    font-family:playball;
+    src:url("/res/fonts/Playball.ttf");
 }
 ::selection {
 	color:#fff;
@@ -97,8 +101,8 @@ a:link {
 	margin-top:12%;
 }
 .profilepic img {
-	height:150px;
-	width:150px;
+	height:128px;
+	width:128px;
 	border:4px solid rgba(0,100,200,0.5);
 	border-radius:50%;
 	-moz-border-radius:50%;
@@ -109,40 +113,50 @@ a:link {
 	-o-transition:-moz-transform 0.8s ease-out,border-radius 0.5s ease-out;
 }
 .profilepic img:hover {
-	transform:rotateZ(360deg);
-	-webkit-transform:rotateZ(360deg);
-	-moz-transform:rotateZ(360deg);
-	-o-transform:rotateZ(360deg);
-	border-radius:10%;
-	-moz-border-radius:10%;
-	-webkit-border-radius:10%;
-	-o-border-radius:10%;
+	/*transform:rotateZ(360deg);*/
+	/*-webkit-transform:rotateZ(360deg);*/
+	/*-moz-transform:rotateZ(360deg);*/
+	/*-o-transform:rotateZ(360deg);*/
+    border-radius:10%;
+    -moz-border-radius:10%;
+    -webkit-border-radius:10%;
+    -o-border-radius:10%;
 }
 .title {
-	font-family:segoepr;
-	font-size:40px;
+	font-family:Playball;
+	font-size:45px;
 	margin-top:-3%;
 }
 .title a {
 	color:#fff;
 	font-weight:500;
 	text-shadow:0 0 5px;
-	transition:color 0.5s;
-	-webkit-transition:color 0.5s;
-	-moz-transition:color 0.5s;
-	-o-transition:color 0.5s;
+    border-bottom: 1px;
+
+	/*transition:color 0.5s;*/
+	/*-webkit-transition:color 0.5s;*/
+	/*-moz-transition:color 0.5s;*/
+	/*-o-transition:color 0.5s;*/
+
+	transition:letter-spacing 0.5s ease-in-out;
+	-webkit-transition:letter-spacing 0.5s ease-in-out;
+	-moz-transition:letter-spacing 0.5s ease-in-out;
+	-o-transition:letter-spacing 0.5s ease-in-out;
 }
+
 .title a:hover {
-	color:yellow;
+    /*color:yellow;*/
+    letter-spacing:6px;
 }
+
 .sub-title {
-	font-family:segoepr;
-	color:lightgray;
-	font-style:italic;
-	text-shadow:0px 0px 2px;
-	margin-top:-9%;
+	font-family:"Droid Serif", "Time New Roman";
+    color:lightgrey;
+	/*font-style:italic;*/
+    text-shadow:0px 0px 2px;
+	margin-top:-5%;
 	margin-bottom:0;
-	letter-spacing:0;
+	letter-spacing:4px;
 }
 #nav {
 	margin:8% 0 8% -10%;
