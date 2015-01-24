@@ -37,7 +37,7 @@ samples.Where(conditions...))...
 ### 构建测试
 `foreach`和`for`语句基本等价，主要测试`foreach`与`linq`的效率差异。为此编写了一个简单的`LinqTest`类来辅助测试，测试主体是下面两个函数：
 
-```
+```cs
 private void DoLinq()
 {
     var result = Samples.Where(item => Equals(item, Sought)).ToList();
