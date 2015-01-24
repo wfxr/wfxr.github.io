@@ -1,10 +1,11 @@
-markdown: kramdown
-kramdown:
-    input: GFM
-highlighter: pygments
 permalink: blog/:year/:month/:day/:title.html
 paginate: 6
 paginate_path: page/:num
+markdown: kramdown
+
+kramdown:
+  input: GFM
+highlighter: pygments
 
 blog:
     name: Wenxuan's Blog                                                # 博客名称
