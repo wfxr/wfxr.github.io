@@ -90,7 +90,7 @@ private void DoForeach()
 |`linq` (*ms*)    |17  |34  |70  |144 |284 |577 |1145|
 |**相对效率增幅** |-18%|-15%|11% |27% |-11%|9%  |-14%|
 
-![Geometric pattern with fading gradient](/res/img/linq_test_result_int.jpg)
+![Chart of List<int>](/res/img/linq_test_result_int.jpg)
 
 * **列表元素为`string`时**
 
@@ -100,16 +100,16 @@ private void DoForeach()
 |`linq` (*ms*)    |17  |33  |70  |138 |296 |568 |1157|
 |**相对效率增幅** |-18%|-15%|-20%|-13%|-11%|-11%|-17%|
 
-![Geometric pattern with fading gradient](/res/img/linq_test_result_string.jpg)
+![Chart of List<string>](/res/img/linq_test_result_string.jpg)
 
 <p>
 （相对效率增幅通过`E_(21)=(e_1 - e_2) / e_1 = (1 / t_1 - 1 / t_2) / (1 / t_1) = (t_2 - t_1) / t_2`计算。）
 </p>
 
-从上面数据可以看出，测试中`linq`比`foreach`慢15%左右。在对`List<int>`的测试中，似乎数据量为3.20E+06，6.40E+06和2.56E+07时，linq的效率高一些，不过并无一致的规律可循，可能是由于系统的进程调度和CPU的频率波动调整所造成的。
+从上面数据可以看出，测试中`linq`比`foreach`慢15%左右。在对`List<int>`的测试中，似乎数据量为3.20E+06，6.40E+06和2.56E+07时，linq的效率高一些，不过并无一致的规律可循，可能是由于系统的进程调度和CPU的频率波动所造成的。
 
-进一步做了数据量为1亿的测试，从结果来看，linq的效率平均可以达到80%左右。
+进一步做了数据量为1亿的测试，从结果来看，linq的效率平均为80%左右。
 
 ## 结论
 
-一般情况下，简单地用`linq`代替`foreach`性能会有所损失，不过总体来看`linq`给程序开发带来的收益还是远大于性能上的些许损失的。如果不是对性能有特别苛刻的要求，完全可以放心地使用`linq`使程序逻辑更加简洁清晰并且易读。对于性能是首要考虑因素的代码，可以考虑采用LINQ模式的并行实现PLINQ，或是用C/C++嵌入编写那一部分耗时的代码。
+简单地用`linq`来代替`foreach`在性能方面有所损失，不过总体来看`linq`给.Net程序开发带来的收益还是远大于性能上的损失。如果不是对性能有特别苛刻的要求，完全可以放心地使用`linq`，使程序逻辑更加清晰，代码也更简洁易读。对于性能是首要考虑因素的代码，可以考虑采用LINQ模式的并行实现PLINQ，或是用C/C++嵌入编写那一部分耗时的代码。
