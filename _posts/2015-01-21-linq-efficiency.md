@@ -14,7 +14,7 @@ math: true
 ## 遍历容器的几种方式
 
 使用`for`语句
-```c#
+```cs
 for (var i = 0; i < samples.Count; ++i)
     if (conditions...)
         ...
