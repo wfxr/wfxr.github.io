@@ -14,11 +14,12 @@ math: true
 ## 遍历容器的几种方式
 
 使用`for`语句
-{% highlight c# %}
+
+```
 for (var i = 0; i < samples.Count; ++i)
     if (conditions...)
         ...
-{% endhighlight %}
+```
 
 使用`foreach`语句
 {% highlight c# %}

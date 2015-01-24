@@ -1,0 +1,23 @@
+markdown: kramdown
+highlighter: pygments
+permalink: blog/:year/:month/:day/:title.html
+paginate: 6
+paginate_path: page/:num
+
+blog:
+    name: Wenxuan's Blog                                                # 博客名称
+    description: Learn. Live. Love. Dev.                                         # 博客描述
+    title:                                               # 网页标题
+    url: http://wenxuan.info                                                 # 博客地址
+    duoshuo:                                             # 多说ID
+    tongji:                                              # 百度统计ID
+    qiniu:                                               # 七牛云地址
+author:
+    name: Wenxuan                                                # 作者名称
+    email: wenxuangm@gmail.com                                              # 邮箱地址
+    weibo:                                               # 微博地址
+    github: http://github.com/wfxr                                              # GitHub地址
+    logo: /res/img/bird.png                                               # logo地址
+    douban:
+        name: my book list                                            # 豆瓣地址名称
+        key: 0aebd2c43deed92520c3784cb9cc8b6f                                             # 豆瓣API Key
