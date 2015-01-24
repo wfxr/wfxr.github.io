@@ -1,6 +1,4 @@
-markdown: 
-    kramdown:
-        input: GFM
+markdown: redcarpet
 highlighter: pygments
 permalink: blog/:year/:month/:day/:title.html
 paginate: 6
