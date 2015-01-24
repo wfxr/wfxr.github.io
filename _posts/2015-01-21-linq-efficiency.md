@@ -7,7 +7,7 @@ description: linq与foreach两种方法遍历集合查找元素的效率对比
 math: true
 ---
 
-最近安装了ReSharper，每当习惯性地使用`foreach`循环时，它总是建议我将其重构为`linq`形式。虽然明白写成`linq`语句的形式更简洁，可读性也更好，但是没怎么了解过`linq`的内部实现，不清楚这么做对效率是不是有大的影响。网上对这个问题的也是众说纷纭，没有一个统一的说法，所以还是自己做个测试吧，看看用`linq`代替`foreach`在效率方面到底有没有大的问题。
+最近安装了ReSharper，每当习惯性地使用`foreach`循环时，它总是建议我将其重构为`linq`形式。虽然明白写成`linq`语句的形式更简洁，可读性也更好，但是没怎么了解过`linq`的内部实现，不清楚这么做对效率有没有大的影响，于是就做了一个简单的测试，看看`linq`和`foreach`在遍历循环方面的效率差异。
 
 <!-- more -->
 
@@ -15,30 +15,32 @@ math: true
 
 使用`for`语句
 
-```
+```cs
 for (var i = 0; i < samples.Count; ++i)
     if (conditions...)
         ...
 ```
 
 使用`foreach`语句
-{% highlight c# %}
+
+```c
 foreach (var item in samples)
     if (conditions...)
         ...
-{% endhighlight %}
+```
 
 使用`linq`语句
-{% highlight c# %}
+
+```c
 samples.Where(conditions...))...
-{% endhighlight %}
+```
 
 ## `linq`和`foreach`的效率对比
 
 ### 构建测试
 `foreach`和`for`语句基本等价，主要测试`foreach`与`linq`的效率差异。为此编写了一个简单的`LinqTest`类来辅助测试，测试主体是下面两个函数：
 
-{% highlight c# %}
+```c
 private void DoLinq()
 {
     var result = Samples.Where(item => Equals(item, Sought)).ToList();
@@ -51,14 +53,14 @@ private void DoForeach()
         if (Equals(item, Sought))
             results.Add(item);
 }
-{% endhighlight %}
+```
 
 这两个函数内部分别用`linq`和`foreach`的方式完成相同的功能，即在`Samples`列表中，找出和`Sought`相同的项，并将其添加到`result`列表中。
 
 这里可能有人会问，两个函数都不需要返回什么结果，仅仅做个判断就行了，为何还要执行添加操作？
 确实，之前网上看到的有些帖子就是这么做的，代码有点像这个样子：
 
-{% highlight c# %}
+```c
 private void DoLinq()
 {
     Samples.Where(item => Equals(item, Sought));
@@ -69,7 +71,7 @@ private void DoForeach()
     foreach (var item in Samples)
         if (Equals(item, Sought));
 }
-{% endhighlight %}
+```
 
 这样做的话一定会得出linq效率比foreach好得多的结论。
 原因是linq使用了延时查询技术，只有当查询结果真正用到的时候才执行查询。
