@@ -15,7 +15,7 @@ math: true
 
 使用`for`语句
 
-```c#
+```
 for (var i = 0; i < samples.Count; ++i)
     if (conditions...)
         ...
@@ -23,7 +23,7 @@ for (var i = 0; i < samples.Count; ++i)
 
 使用`foreach`语句
 
-```c#
+```
 foreach (var item in samples)
     if (conditions...)
         ...
@@ -31,7 +31,7 @@ foreach (var item in samples)
 
 使用`linq`语句
 
-```c#
+```
 samples.Where(conditions...))...
 ```
 
@@ -40,7 +40,7 @@ samples.Where(conditions...))...
 ### 构建测试
 `foreach`和`for`语句基本等价，主要测试`foreach`与`linq`的效率差异。为此编写了一个简单的`LinqTest`类来辅助测试，测试主体是下面两个函数：
 
-```c#
+```
 private void DoLinq()
 {
     var result = Samples.Where(item => Equals(item, Sought)).ToList();
@@ -60,7 +60,7 @@ private void DoForeach()
 这里可能有人会问，两个函数都不需要返回什么结果，仅仅做个判断就行了，为何还要执行添加操作？
 确实，之前网上看到的有些帖子就是这么做的，代码有点像这个样子：
 
-```c#
+```
 private void DoLinq()
 {
     Samples.Where(item => Equals(item, Sought));
