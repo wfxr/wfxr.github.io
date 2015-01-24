@@ -21,23 +21,23 @@ for (var i = 0; i < samples.Count; ++i)
 ```
 
 使用`foreach`语句
-{% highlight c# %}
+```
 foreach (var item in samples)
     if (conditions...)
         ...
-{% endhighlight %}
+```
 
 使用`linq`语句
-{% highlight c# %}
+```
 samples.Where(conditions...))...
-{% endhighlight %}
+```
 
 ## `linq`和`foreach`的效率对比
 
 ### 构建测试
 `foreach`和`for`语句基本等价，主要测试`foreach`与`linq`的效率差异。为此编写了一个简单的`LinqTest`类来辅助测试，测试主体是下面两个函数：
 
-{% highlight c# %}
+```
 private void DoLinq()
 {
     var result = Samples.Where(item => Equals(item, Sought)).ToList();
@@ -50,14 +50,14 @@ private void DoForeach()
         if (Equals(item, Sought))
             results.Add(item);
 }
-{% endhighlight %}
+```
 
 这两个函数内部分别用`linq`和`foreach`的方式完成相同的功能，即在`Samples`列表中，找出和`Sought`相同的项，并将其添加到`result`列表中。
 
 这里可能有人会问，两个函数都不需要返回什么结果，仅仅做个判断就行了，为何还要执行添加操作？
 确实，之前网上看到的有些帖子就是这么做的，代码有点像这个样子：
 
-{% highlight c# %}
+```
 private void DoLinq()
 {
     Samples.Where(item => Equals(item, Sought));
@@ -68,7 +68,7 @@ private void DoForeach()
     foreach (var item in Samples)
         if (Equals(item, Sought));
 }
-{% endhighlight %}
+```
 
 这样做的话一定会得出linq效率比foreach好得多的结论。
 原因是linq使用了延时查询技术，只有当查询结果真正用到的时候才执行查询。
