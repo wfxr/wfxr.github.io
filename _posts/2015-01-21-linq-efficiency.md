@@ -7,18 +7,18 @@ description: linq与foreach两种方法遍历集合查找元素的效率对比
 math: true
 ---
 
-最近安装了ReSharper，每当习惯性地使用`foreach`循环时，它总是建议我将其重构为`linq`形式。虽然明白写成`linq`语句的形式更简洁，可读性也更好，但是没怎么了解过`linq`的内部实现，不清楚这么做对效率是不是有大的影响。网上对这个问题的也是众说纷纭，没有一个统一的说法，所以还是自己做个测试吧，看看用`linq`代替`foreach`在效率方面到底有没有大的问题。
+最近安装了ReSharper，每当习惯性地使用`foreach`循环时，它总是建议我将其重构为`linq`形式。虽然明白写成`linq`语句的形式更简洁，可读性也更好，但是没怎么了解过`linq`的内部实现，不清楚这么做对效率有没有大的影响，于是就做了一个简单的测试，看看`linq`和`foreach`在遍历循环方面的效率差异。
 
 <!-- more -->
 
 ## 遍历容器的几种方式
 
 使用`for`语句
-{% highlight c# %}
+```
 for (var i = 0; i < samples.Count; ++i)
     if (conditions...)
         ...
-{% endhighlight %}
+```
 
 使用`foreach`语句
 {% highlight c# %}
