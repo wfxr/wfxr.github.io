@@ -6,7 +6,7 @@ tags: 思考 学习方法
 description: 学习程序设计的一些思考
 math: false
 ---
-（原文链接：[伯乐在线](http://blog.jobbole.com/52761/)，英文出处：[Cecily Carver](https://medium.com/learning-to-code/565fc9dcb329)）
+（原文链接：[伯乐在线](http://blog.jobbole.com/52761/)，英文出处：[Things I Wish Someone Had Told Me When I Was Learning How to Code](https://medium.com/learning-to-code/565fc9dcb329)）
 
 >作者简介：
 Cecily Carver 是多伦多的一位程序媛，和 Jennie Faber 一起创办了一个游戏制作工作室。她喜欢歌剧、舞蹈和弹钢琴。Cecily 在这篇文章分享她在编程道路上的所感所想，给出很多值得思考的编程箴言以及一些思想误区，比如在你学习编程之前思考一下你的目标、编程不是什么神秘的东西、坚持比方法更重要等，可以让我们在编程路上少走一些弯路，从而有更多的时间学习技术让自己变的越来越强大。
