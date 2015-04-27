@@ -48,7 +48,7 @@ private void DoPLinq() {
 |`linq` (*ms*)   |246|497|749|956|1185|1482|1760|1917|
 |`plinq` (*ms*)  |57|109|160|212|289|319|394|436|
 
-![Chart of List<int>](/res/img/2015-04-27-linq-efficiency-2/result-eff.jpg)
+![Chart of eff](/res/img/2015-04-27-linq-efficiency-2/result-eff.jpg)
 
 相对效率：
 |样本大小|10M|20M|30M|40M|50M|60M|70M|80M|
@@ -57,4 +57,4 @@ private void DoPLinq() {
 |`linq` (*ms*)   |67%|67%|72%|71%|72%|68%|68%|69%|
 |`plinq` (*ms*)  |289%|307%|336%|319%|296%|315%|304%|305%|
 
-![Chart of List<int>](/res/img/2015-04-27-linq-efficiency-2/result-relative-eff.jpg)
+![Chart of relative eff](/res/img/2015-04-27-linq-efficiency-2/result-relative-eff.jpg)
