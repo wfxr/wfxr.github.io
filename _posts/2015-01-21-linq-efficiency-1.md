@@ -1,6 +1,6 @@
 ---
 layout: post
-title: linq与foreach遍历容器效率对比
+title: linq与foreach遍历容器效率对比（一）
 category: 技术
 tags: .Net C#
 description: linq与foreach两种方法遍历集合查找元素的效率对比
