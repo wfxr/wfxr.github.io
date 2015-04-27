@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 当初学习编程时有人给我这些忠告该多好[转]
+title: 当初学习编程时有人给我这些忠告该多好
 category: 思考
 tags: 思考 学习方法
 description: 学习程序设计的一些思考

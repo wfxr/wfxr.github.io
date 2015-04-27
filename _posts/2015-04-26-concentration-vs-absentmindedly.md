@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 专注与游离[转]
+title: 专注与游离
 category: 感悟
 tags: 思考 学习方法
 description: 
