@@ -63,6 +63,7 @@ private void DoPLinq()
 ![Chart of relative eff](/res/img/2015-04-27-linq-efficiency-2/result-relative-eff.jpg)
 
 上述测试使用的是int数组，使用string数组的测试结果与之没有太大差异，故不列出。
+
 可以看出，`plinq`的运行效率遥遥领先于其他两种方法，平均达到了`foreach`方法的三倍。另外也可以看出，更改测试语句后的结果更真实的反映了`linq`和`foreach`之间的效率差异（原来得到的结果是80%左右）。
 
 ## 结论
