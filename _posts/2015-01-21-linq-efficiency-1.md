@@ -113,3 +113,5 @@ private void DoForeach()
 ## 结论
 
 简单地用`linq`来代替`foreach`在性能方面有所损失，不过总体来看`linq`给.Net程序开发带来的收益还是远大于性能上的损失。如果不是对性能有特别苛刻的要求，完全可以放心地使用`linq`，使程序逻辑更加清晰，代码也更简洁易读。对于性能是首要考虑因素的代码，可以考虑采用LINQ模式的并行实现PLINQ，或是用C/C++嵌入编写那一部分耗时的代码。
+
+## [linq与foreach遍历容器效率对比（二）](http://wenxuan.info/blog/2015/04/27/linq-efficiency-2.html)
