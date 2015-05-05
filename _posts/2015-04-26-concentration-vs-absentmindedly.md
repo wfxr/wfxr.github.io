@@ -6,7 +6,7 @@ tags: 思考 学习方法
 description: 
 math: false
 ---
-（节选自：[专注与游离](http://macshuo.com/?p=1307)，原文作者：池建强）
+（本文节选自：[专注与游离](http://macshuo.com/?p=1307)，原文作者：池建强）
 
 ![Theme illustration](/res/img/concentration-cat.jpg)
 
