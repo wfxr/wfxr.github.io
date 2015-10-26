@@ -9,19 +9,20 @@ redcarpet:
 highlighter: pygments
 
 blog:
-    name: Wenxuan's Blog                                                # 博客名称
-    description: Learn. Live. Love. Dev.                                         # 博客描述
-    title:                                               # 网页标题
-    url: http://wenxuan.info                                                 # 博客地址
+    name: Wenxuan's Blog                        # 博客名称
+    #description: Learn. Live. Love. Dev.        # 博客描述
+    description: Stay Hungry. Stay Foolish.     # 博客描述
+    title:                                      # 网页标题
+    url: http://wenxuan.info                    # 博客地址
     duoshuo: wfxr
     tongji: 7f0f2b0c17ce12f9c56d5cb26bf35a23
     qiniu: wenxuan
 author:
-    name: Wenxuan                                                # 作者名称
-    email: wenxuangm@gmail.com                                              # 邮箱地址
-    weibo:                                               # 微博地址
-    github: http://github.com/wfxr                                              # GitHub地址
-    logo: /res/img/bird_128x128.jpg                                               # logo地址
+    name: Wenxuan                               # 作者名称
+    email: wenxuangm@gmail.com                  # 邮箱地址
+    weibo: http://weibo.com/winksxuan           # 微博地址
+    github: http://github.com/wfxr              # GitHub地址
+    logo: /res/img/bird_128x128.jpg             # logo地址
     douban:
         name: wenxuandb
         key: 0aebd2c43deed92520c3784cb9cc8b6f
