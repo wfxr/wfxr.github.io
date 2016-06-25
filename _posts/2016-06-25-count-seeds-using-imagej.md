@@ -18,7 +18,7 @@ math: false
 
 <!-- more -->
 
-## **安装ImageJ**
+## 安装ImageJ
 
 安装ImageJ很简单，不过相比原版的imageJ，我更推荐大家安装集成了大量插件，并且支持自动更新的的发行版[Fiji](http://fiji.sc/)。
 
@@ -26,7 +26,7 @@ math: false
 
 下文的操作都是基于最新版本的Fiji，不过并未用到额外的插件，所以也同样适用于原版的ImageJ。
 
-## **前期工作**
+## 前期工作
 
 ### **拍摄种子照片**
 
@@ -40,19 +40,23 @@ math: false
 
 * 为了方便后续的批量处理，如果照片边缘超出了纸张或者背景面板的边界，用合适的图片处理软件将其裁去。
 
-## **ImageJ操作流程**
+## ImageJ操作流程
 
 ### **打开图片**
 
-* 打开ImageJ，在菜单栏里面选择File -> Open，在打开对话框里面选中种子的照片。
+* 运行ImageJ软件，在菜单栏里面选择File -> Open，在打开对话框里面选中种子的照片。
+
+![original-image](/res/img/2016-06-25-count-seeds-using-imagej/original-image.png)
 
 ### **消除背景**
+
+*如果照片无明显噪点或污点可跳过此步骤*
 
 * 菜单栏选择Process -> Subtract
 
 * Background，打开消除背景对话框：
 
-![subtract-background-window]()
+![subtract-background-window](/res/img/2016-06-25-count-seeds-using-imagej/subtract-background-window.png)
 
 * "Rolling ball radius"表示消除背景过程的粒度大小，当默认值处理结果不理想时做相应的调整即可；
 
@@ -60,7 +64,7 @@ math: false
 
 * 完成设定后，点击"OK"按钮；
 
-![subtract-background-photo]()
+![subtract-background-image](/res/img/2016-06-25-count-seeds-using-imagej/subtract-background-image.png)
 
 ### **转换位图**
 
@@ -70,7 +74,7 @@ math: false
 
 * 菜单栏选择Image -> Adjust -> Threshold，打开Threshold对话框：
 
-![threshold-window]()
+![threshold-window](/res/img/2016-06-25-count-seeds-using-imagej/threshold-window.png)
 
 * 在右侧下拉框中将类型更改为"Red"；
 
@@ -80,15 +84,19 @@ math: false
 
 * 点击"Apply"按钮；
 
+![threshold-window](/res/img/2016-06-25-count-seeds-using-imagej/threshold-image.png)
+
 ### **切分粘连区域**
 
 * 菜单栏选择Process -> Binary -> Watershed；
+
+![threshold-window](/res/img/2016-06-25-count-seeds-using-imagej/watershed-image.png)
 
 ### **分析并计数**
 
 * 菜单栏选择Analyze -> Analyze Particles，打开Analyze Particles对话框：
 
-![analyze-particles-window]()
+![analyze-particles-window](/res/img/2016-06-25-count-seeds-using-imagej/analyze-particles-window.png)
 
 * "Size"参数表示的是尺寸范围，单位是像素的平方，如果不清楚应该设多少，可以先保持默认（0到无穷）；
 
@@ -115,5 +123,3 @@ math: false
 * 计数结果汇总
 
 ![results-summary](/res/img/2016-06-25-count-seeds-using-imagej/results-summary.png)
-
-## **结论**
