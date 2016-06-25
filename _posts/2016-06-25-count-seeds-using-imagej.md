@@ -18,17 +18,12 @@ math: false
 
 <!-- more -->
 
-## 安装ImageJ
 
-安装ImageJ很简单，不过相比原版的imageJ，我更推荐大家安装集成了大量插件，并且支持自动更新的的发行版[Fiji](http://fiji.sc/)。
+前期工作
+========
 
-进入[Fiji下载页](http://fiji.sc/#download)，根据自己操作系统的类型下载相应的版本，解压之后即可运行。
-
-下文的操作都是基于最新版本的Fiji，不过并未用到额外的插件，所以也同样适用于原版的ImageJ。
-
-## 前期工作
-
-### **拍摄种子照片**
+拍摄种子照片
+-----------
 
 * 拍摄照片时，将种子置于纯色背景（如干净的A4白纸），背景和种子颜色要有明显的差异。
 
@@ -36,19 +31,32 @@ math: false
 
 * 拍照时镜头尽可能正对，避免照片不同部位比例差异过大。
 
-### **裁剪照片**
+安装ImageJ
+----------
+
+安装ImageJ很简单，不过相比原版的imageJ，我更推荐大家安装集成了大量插件，并且支持自动更新的的发行版[Fiji](http://fiji.sc/)。
+
+进入[Fiji下载页](http://fiji.sc/#download)，根据自己操作系统的类型下载相应的版本，解压之后即可运行。
+
+下文的操作都是基于最新版本的Fiji，不过并未用到额外的插件，所以也同样适用于原版的ImageJ。
+
+裁剪照片
+--------
 
 * 为了方便后续的批量处理，如果照片边缘超出了纸张或者背景面板的边界，用合适的图片处理软件将其裁去。
 
-## ImageJ操作流程
+ImageJ处理流程
+==============
 
-### **打开图片**
+打开图片
+--------
 
 * 运行ImageJ软件，在菜单栏里面选择File -> Open，在打开对话框里面选中种子的照片。
 
 ![original-image](/res/img/2016-06-25-count-seeds-using-imagej/original-image.png)
 
-### **消除背景**
+消除背景
+--------
 
 *如果照片无明显噪点或污点可跳过此步骤*
 
@@ -66,11 +74,13 @@ math: false
 
 ![subtract-background-image](/res/img/2016-06-25-count-seeds-using-imagej/subtract-background-image.png)
 
-### **转换位图**
+转换位图
+--------
 
 * 菜单栏选择Image -> Type -> 8bit，将图片转换成8位格式
 
-### **设置阀值**
+设置阀值
+--------
 
 * 菜单栏选择Image -> Adjust -> Threshold，打开Threshold对话框：
 
@@ -86,13 +96,15 @@ math: false
 
 ![threshold-window](/res/img/2016-06-25-count-seeds-using-imagej/threshold-image.png)
 
-### **切分粘连区域**
+切分粘连区域
+------------
 
 * 菜单栏选择Process -> Binary -> Watershed；
 
 ![threshold-window](/res/img/2016-06-25-count-seeds-using-imagej/watershed-image.png)
 
-### **分析并计数**
+分析并计数
+----------
 
 * 菜单栏选择Analyze -> Analyze Particles，打开Analyze Particles对话框：
 
@@ -108,7 +120,8 @@ math: false
 
 * 完成配置后，点击"OK"按钮；
 
-### **输出结果**
+输出结果
+--------
 
 * Particles轮廓图
 
