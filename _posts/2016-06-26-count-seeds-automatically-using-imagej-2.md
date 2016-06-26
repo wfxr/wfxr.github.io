@@ -80,7 +80,7 @@ Counting，ImageJ已经完成了区域分割和分析计数的操作，并显示
 改进宏
 ------
 
-下面我们给两个宏命令分别设定一个快捷键，这样就免去了找宏命令和鼠标点击的工作。方法也很简单，在之前的基础上稍作修改即可：
+* 我们可以给两个宏命令分别设定一个快捷键，这样就免去了找宏命令和鼠标点击的工作。在之前的基础上稍作修改即可：
 
 ```
 macro "Seeds Counting Preprocssing [f1]" {
@@ -99,10 +99,10 @@ macro "Seeds Counting [f2]" {
 
 现在操作流程更简单了，打开图片 -> 按下F1 -> 配置Threshold参数 -> 按下F2；
 
-如果能保证照片有较好的质量，那么可以免去配置Threshold参数的过程，将两个宏合成为一个：
+* 如果能保证照片有较好的质量，那么可以免去配置Threshold参数的过程，将两个宏合成一个：
 
 ```
-macro "Seeds Counting [f1]" {
+macro "Seeds Counting [f3]" {
 	run("Subtract Background...", "rolling=20 light");
 	run("8-bit");
     setAutoThreshold("Default");
@@ -112,18 +112,20 @@ macro "Seeds Counting [f1]" {
 	run("Analyze Particles...", "size=100-Infinity show=Outlines display clear summarize");
 ```
 
-如此以来，要对一张种子的图片计数，仅仅需要打开图片然后按下F1即可；
+如此以来，要对一张种子的图片计数，仅仅需要打开图片然后按下F3即可；
+
+* 如果图片数量相当庞大，还可以编写脚本自动处理每一张图片。原理很简单，用脚本遍历指定文件夹下的每一张图片，对其调用前面编写好的ImageJ宏命令。
 
 演示
 ====
 
-手动调节Threshold参数
----------------------
+使用手动调节Threshold参数的宏
+-----------------------------
 
 ![demo1](/res/img/2016-06-25-count-seeds-using-imagej/demo1.gif)
 
-自动调节Threshold参数
----------------------
+使用自动调节Threshold参数的宏
+-----------------------------
 
 ![demo2](/res/img/2016-06-25-count-seeds-using-imagej/demo2.gif)
 
