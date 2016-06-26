@@ -7,9 +7,11 @@ description: 介绍了利用ImageJ实现自动统计种子数目的方法
 math: false
 ---
 
-通过[上一篇文章](http://wenxuan.info/blog/2016/06/25/count-seeds-automatically-using-imagej-1.html)的介绍，你应该可以熟练的使用ImageJ对种子的照片进行分析计数了。不过，需要处理的照片较少时，这种方式还算比较快捷，如果要处理大量的图片，，就显得有些枯燥和繁琐了。
+通过[上一篇文章](http://wenxuan.info/blog/2016/06/25/count-seeds-automatically-using-imagej-1.html)的介绍，你应该可以熟练的使用ImageJ对种子的照片进行分析计数了。不过如果要处理大量的图片，这种方式还是不够快捷。
 
-原因就是虽然我们已经把计数的环节交给了程序去处理，但是操作流程却并没有实现自动化，每次我们都要手动重复这些相同的步骤。计算机最擅长的就是帮我们做重复的工作，下面就介绍如何通过使用宏自动化我们的操作流程。
+原因就是虽然我们已经把计数的环节交给了程序去处理，但是操作流程却并没有实现自动化。每次我们都要手动重复这些相同的步骤而这恰恰是计算机最擅长做的。
+
+下面就介绍如何通过使用宏自动化我们的操作流程。
 
 <!-- more -->
 
@@ -115,13 +117,13 @@ macro "Seeds Counting [f1]" {
 演示
 ====
 
-使用两条宏命令
---------------
+手动调节Threshold参数
+---------------------
 
-![demo1](/res/img/2016-06-25-count-seeds-using-imagej/demo1.git)
+![demo1](/res/img/2016-06-25-count-seeds-using-imagej/demo1.gif)
 
-使用一条宏命令
---------------
+自动调节Threshold参数
+---------------------
 
-![demo2](/res/img/2016-06-25-count-seeds-using-imagej/demo2.git)
+![demo2](/res/img/2016-06-25-count-seeds-using-imagej/demo2.gif)
 
