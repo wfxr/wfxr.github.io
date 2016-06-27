@@ -110,6 +110,7 @@ macro "Seeds Counting [f3]" {
     run("Convert to Mask");
 	run("Watershed");
 	run("Analyze Particles...", "size=100-Infinity show=Outlines display clear summarize");
+}
 ```
 
 如此以来，要对一张种子的图片计数，仅仅需要打开图片然后按下F3即可；
