@@ -138,4 +138,4 @@ ImageJ处理流程
 
 Continuing...
 =============
-[**使用ImageJ实现种子的自动计数（二）**]()
+[**使用ImageJ实现种子的自动计数（二）**](http://wenxuan.info/blog/2016/06/26/count-seeds-automatically-using-imagej-2.html)
