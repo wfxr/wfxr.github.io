@@ -21,18 +21,20 @@ Objects查询，他们的主要区别在于PLINQ尝试充分利用系统中的�
 
 上一篇对foreach和linq的测试中，为了保证查询真正被执行，使用了`ToList()`方法。但是这样存在的一个问题是测试数据量很大时，ToList()的执行要占用很多时间，这部分二者都要用到的时间弱化了差异的对比。所以在本文中，使用了新的测试方法，以保证尽可能接近真实的差异：
 
-```C#
-private void DoForeach() 
+```c#
+private void DoForeach()
 {
     var count = 0;
-    foreach (var sample in Samples) 
+    foreach (var sample in Samples)
         if (Equals(sample, Sought)) ++count;
 }
+
 private void DoLinq()
 {
     var count = Samples.Count(sample => Equals(sample, Sought));
 }
-private void DoPLinq() 
+
+private void DoPLinq()
 {
     var count = Samples.AsParallel().Count(sample => Equals(sample, Sought));
 }
@@ -50,7 +52,7 @@ private void DoPLinq()
 |`linq` (*ms*)   |246|497|749|956|1185|1482|1760|1917|
 |`plinq` (*ms*)  |57|109|160|212|289|319|394|436|
 
-![Chart of eff](/res/img/2015-04-27-linq-efficiency-2/result-eff.jpg)
+![](/res/img/2015-04-27-linq-efficiency-2/result-eff.jpg)
 
 相对效率：
 
@@ -60,7 +62,7 @@ private void DoPLinq()
 |`linq` (*ms*)   |67%|67%|72%|71%|72%|68%|68%|69%|
 |`plinq` (*ms*)  |289%|307%|336%|319%|296%|315%|304%|305%|
 
-![Chart of relative eff](/res/img/2015-04-27-linq-efficiency-2/result-relative-eff.jpg)
+![](/res/img/2015-04-27-linq-efficiency-2/result-relative-eff.jpg)
 
 上述测试使用的是`int`数组，使用`string`数组的测试结果与之没有太大差异，故不列出。
 

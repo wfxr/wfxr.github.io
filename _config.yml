@@ -1,12 +1,13 @@
-permalink: blog/:year/:month/:day/:title.html
+#permalink: blog/:year/:month/:day/:title.html
+permalink: date
 paginate: 6
 paginate_path: page/:num
-markdown: redcarpet
-redcarpet:
-    extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-#kramdown:
-  #input: GFM
-highlighter: pygments
+markdown: kramdown
+highlighter: rouge
+gems: [jekyll-paginate]
+kramdown:
+    hard_wrap: false
+    input: GFM
 
 blog:
     name: Wenxuan's Blog                        # 博客名称

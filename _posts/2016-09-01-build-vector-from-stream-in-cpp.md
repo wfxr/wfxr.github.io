@@ -1,20 +1,22 @@
 ---
 layout: post
-title: 迭代器技巧：将文件或字符串中的数据读入容器的快捷方法[C++]
+title: 将文件或字符串中的数据读入容器的快捷方法[C++]
 category: 技术
 tags: C++ STL Iterator
 description: 介绍了一种将文本或字符串中的数据读入容器的迭代器技巧
 math: true
 ---
 
-##从文件流读入：
+## 从文件流读入：
 
 ```c++
 ifstream in{"input.txt"};
 vector<int> nums{istream_iterator<int>{in}, istream_iterator<int>{}};
 ```
 
-##从字符串流读入：
+<!-- more -->
+
+## 从字符串流读入：
 
 ```c++
 istringstream in{str};
