@@ -1,0 +1,28 @@
+code {
+    font-family:Monaco,Consolas,Menlo,"Andale Mono","Courier New","Ubuntu Mono",Arial,"Microsoft YaHei","Hiragino Sans GB",sans-serif;
+    font-size:17px;
+    /*background:rgba(235,245,245,0.75);*/
+    color:#494949;
+    padding:0 4px;
+    border-radius:4px;
+    letter-spacing:1px;
+    word-break:initial;
+}
+pre code {
+    font-family:Monaco,Consolas,Menlo,"Andale Mono","Courier New","Ubuntu Mono",Arial,"Microsoft YaHei","Hiragino Sans GB",sans-serif;
+    font-size:16px;
+    /*background:rgba(230,240,240,0.75);*/
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:5px;
+    line-height:1.5;
+    display:block;
+    border-left:9px solid rgba(102,128,153,0.3);
+    overflow-x:auto;
+    word-wrap:normal;
+    white-space:pre;
+    letter-spacing:0.5px;
+    tab-size:4;
+    -moz-tab-size:4;
+    -o-tab-size:4;
+}

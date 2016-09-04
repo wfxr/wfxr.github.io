@@ -2,12 +2,16 @@
 permalink: date
 paginate: 6
 paginate_path: page/:num
-markdown: kramdown
-highlighter: rouge
 gems: [jekyll-paginate]
+markdown: kramdown
+# !github-pages! mandatory › https://help.github.com/articles/using-jekyll-with-pages/#configuration-settings-you-cannot-change
+# Since Jekyll 3 the default highlighter is Rouge (replaced Pygments.rb in v44)
+highlighter: rouge
+# !github-pages! mandatory › https://help.github.com/articles/using-jekyll-with-pages/#configuration-settings-you-cannot-change
+# Since Jekyll 3 the default highlighter is Rouge (replaced Pygments.rb in v44)
 kramdown:
-    hard_wrap: false
     input: GFM
+    hard_wrap: false
 
 blog:
     name: Wenxuan's Blog                        # 博客名称

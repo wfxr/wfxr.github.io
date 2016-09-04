@@ -9,7 +9,7 @@ math: true
 
 最近在重温排序算法，为了调试方便，经常需要将容器里面的元素打印在屏幕上:
 
-```c++
+``` c++
 cout << '[';
 for (const auto& e : container)
     cout << e << ", ";
