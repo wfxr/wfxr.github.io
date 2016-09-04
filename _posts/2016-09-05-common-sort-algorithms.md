@@ -286,8 +286,9 @@ void quick_sort3(vector<int> &a, int l, int u) {
             ++i;
     }
 
-    //  [l, lt) [lt, gt] (gt, u]
-    // |  < t  |  == t  |  > t  |
+    // [l, lt)范围内的元素均小于t
+    // [lt, gt]范围内的元素均等于t
+    // (gt, u]范围内的元素均大于t
     quick_sort3(a, l, lt - 1);
     quick_sort3(a, gt + 1, u);
 }
