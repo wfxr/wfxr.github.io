@@ -67,16 +67,16 @@ strong,b {
     color:#525d67;
 }
 table {
-    /*border-collapse:collapse;*/
+    border-collapse:collapse;
 }
 /*表格首行*/
 th {
-    padding:4px 40px;
+    padding:4px 36px;
     border:1px solid #ddd;
 }
 /*表格剩余行*/
 td {
-    padding:4px 40px;
+    padding:4px 36px;
     border:1px solid #ddd;
 }
 #blog {

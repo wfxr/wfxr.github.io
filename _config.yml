@@ -1,17 +1,21 @@
-#permalink: blog/:year/:month/:day/:title.html
-permalink: date
+permalink: /blog/:year/:month/:day/:title.html
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
+timeZone: Asia/Shanghai
+
+# 分页设置
 paginate: 6
-paginate_path: page/:num
+paginate_path: "page:num"
+
 gems: [jekyll-paginate]
 markdown: kramdown
-# !github-pages! mandatory › https://help.github.com/articles/using-jekyll-with-pages/#configuration-settings-you-cannot-change
-# Since Jekyll 3 the default highlighter is Rouge (replaced Pygments.rb in v44)
 highlighter: rouge
-# !github-pages! mandatory › https://help.github.com/articles/using-jekyll-with-pages/#configuration-settings-you-cannot-change
-# Since Jekyll 3 the default highlighter is Rouge (replaced Pygments.rb in v44)
 kramdown:
     input: GFM
-    hard_wrap: false
+    footnote_nr: 1
+    auto_ids: true
+    toc_levels: 1..6
+    entity_output: as_char
+    hard_wrap: true     # 换行时不用在行末加上两个空格
 
 blog:
     name: Wenxuan's Blog                        # 博客名称
@@ -28,6 +32,6 @@ author:
     weibo: http://weibo.com/winksxuan           # 微博地址
     github: http://github.com/wfxr              # GitHub地址
     logo: /res/img/bird_128x128.jpg             # logo地址
-    douban:
+    douban:                                     # 豆瓣API
         name: wenxuandb
         key: 0aebd2c43deed92520c3784cb9cc8b6f

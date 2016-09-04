@@ -13,11 +13,11 @@ math: true
 
 <!-- more -->
 
-{% highlight js %}
+``` js
 <script type="text/javascript"
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
-{% endhighlight %}
+```
 
 Jekyll中可以将此代码段添加到`header.html`或`default.html`中。
 
@@ -34,7 +34,7 @@ Jekyll中可以将此代码段添加到`header.html`或`default.html`中。
 ### 二次方程求根：
 <p>
 When `a != 0`, there are two solutions to `ax^2 + bx + c = 0` and they are
-<p style="text-align:center"> 
+<p style="text-align:center">
 `x = (-b +- sqrt(b^2-4ac))/(2a) .` </p>
 </p>
 
