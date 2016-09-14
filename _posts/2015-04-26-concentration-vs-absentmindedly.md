@@ -1,9 +1,9 @@
 ---
-layout: post
-title: 专注与游离
-category: 感悟
+layout: life
+title: 专注与游离[转载]
+category: 感悟&思考
 tags: 思考 学习方法
-description: 
+description:
 math: false
 ---
 （本文节选自MacTalk：[专注与游离](http://macshuo.com/?p=1307)，原文作者：池建强）

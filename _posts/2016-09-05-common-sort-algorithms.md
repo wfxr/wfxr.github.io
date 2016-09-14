@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 七种常见的排序算法
-category: [算法, 排序, C++]
-tags: [blog]
+category: 算法
+tags: 排序 算法 C++
 description: 介绍七种常见排序算法的实现
 math: true
 ---

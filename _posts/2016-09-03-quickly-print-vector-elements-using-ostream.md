@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 使用标准输出流快速打印容器元素[C++]
-category: 技术
+title: 使用标准输出流快速打印容器元素
+category: C++
 tags: C++ STL
 description: 介绍了一种使用标准输出流快速打印容器元素的技巧
 math: true

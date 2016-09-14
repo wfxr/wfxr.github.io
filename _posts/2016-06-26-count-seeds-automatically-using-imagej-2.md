@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 使用ImageJ实现种子的自动计数（二）
-category: 技术
+category: 工具
 tags: Image-Processing Macro
 description: 介绍了利用ImageJ实现自动统计种子数目的方法
 math: false
