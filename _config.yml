@@ -6,7 +6,7 @@ timeZone: Asia/Shanghai
 paginate: 6
 paginate_path: "page:num"
 
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, jekyll-gist]
 markdown: kramdown
 highlighter: rouge
 kramdown:
