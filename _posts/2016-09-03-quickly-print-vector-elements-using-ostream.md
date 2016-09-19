@@ -35,7 +35,7 @@ ostream &operator<<(ostream &os, const vector<T> &v) {
     char comma[]{'\0', ' ', '\0'};
     for (const auto &e : v) {
         os << comma << e;
-        comma[0] = ','
+        comma[0] = ',';
     }
     return os << ']';
 }
