@@ -349,7 +349,7 @@ void shift_down(vector<int> &a, int n, int i = 0) {
         // c+1是右子节点
         if (c + 1 < n && a[c] < a[c + 1]) ++c;
         // c现在是左右子节点中较大的那个
-        if (a[c] < a[i]) break;
+        if (!(a[i] < a[c])) break;  // 相等时也应退出循环
         swap(a[i], a[c]);
         i = c;
     }
