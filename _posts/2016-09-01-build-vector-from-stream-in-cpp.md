@@ -31,4 +31,4 @@ vector<int> nums{istream_iterator<int>{in}, istream_iterator<int>{}};
 vector<int> nums{istream_iterator<int>{istringstream{str}}, istream_iterator<int>{}};
 ```
 
-因为`istream_iterator`的构造函数只接收左值(`istream_type &`)，而临时创建的无名对象是右值(`istream_type &&`)。
+因为`istream_iterator`的构造函数接收的是左值引用类型`istream_type &`（**无`const`修饰**），而临时创建的无名对象是右值类型`istream_type &&`，二者不兼容。
