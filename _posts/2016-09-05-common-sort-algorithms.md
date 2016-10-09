@@ -333,8 +333,8 @@ void heap_sort1(vector<int> &a) {
 void shift_up(vector<int> &a, int n) {
     for (int i = n - 1; i > 0;) {
         auto c = (i - 1) / 2; // i 的父节点
-        if (a[i] < a[c]) break;
-        swap(a[c], a[i]);
+        if (!(a[c] < a[i])) break;
+        swap(a[c], a[i]);   // 相等时也应退出循环
         i = c;
     }
 }
@@ -355,6 +355,7 @@ void shift_down(vector<int> &a, int n, int i = 0) {
     }
 }
 ```
+*堆排序代码中`shift_up`和`shift_down`刻意只使用了`<`来比较元素，对于数值类型的排序，这不是必须的，但这样可以使算法用于只支持`<`的类型。*
 
 ### 改进的堆排序实现
 
